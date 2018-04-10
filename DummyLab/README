@@ -1,0 +1,23 @@
+This archive is meant to help you familiarize yourself with the testing facilities used throughout 
+ all the lab assignments. You will implement a function which always returns the constant 0 given an
+ input of type int option. The archive contains the following files and directories:
+
+ 1. sources.cm
+ 2. support.cm
+ 3. lib/
+ 4. RefSol.sml
+ 5. tester.sml
+ 6. README file
+ 7. Assignment.pdf
+ 8. Tests.sml *
+ 9. Sol.sml *
+
+You should only modify the last 2 files, denoted by *. Put the implementation in Sol.sml. 
+Do NOT modify other parts of the file.
+
+To aid with testing we have provided a testing structure, Tester, which should simplify the testing process. 
+Tester will test your implementations against test cases speciﬁed within Tests.sml.
+Test cases should be added to the tests list in the Tests structure. To compile and load everything into the SML/NJ REPL,
+run 'CM.make "sources.cm"' within the REPL.In order to test your code, after running CM.make, 
+you will need to call the following function:
+Tester.testZero ()
